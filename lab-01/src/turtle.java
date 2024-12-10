@@ -20,7 +20,7 @@ public class turtle {
 
     private static final int LEFT = 4;
 
-    public static void main(String[] args) {
+    public static void Main(String[] args) {
         Scanner in = new Scanner(System.in);
 
         while (true) {
@@ -28,9 +28,7 @@ public class turtle {
             switch (command) {
                 case "Init":
                     for (int i = 0; i < AREA_OF_TURTLE.length; i++) {
-                        for (int j = 0; j < AREA_OF_TURTLE[i].length; j++) {
-                            AREA_OF_TURTLE[i][j] = ' ';
-                        }
+                        for (int j = 0; j < AREA_OF_TURTLE[i].length; j++) AREA_OF_TURTLE[i][j] = ' ';
                     }
                     System.out.println("Площадка инициализирована.");
                     break;
